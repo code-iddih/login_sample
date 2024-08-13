@@ -1,38 +1,204 @@
+body {
+  background-color: #f3f3f3; /* Changed background to a lighter shade */
+  font-family: 'Roboto', sans-serif;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #fafafa; /* Optional background to highlight the image */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.form-section {
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 30px 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.form-container {
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #4a4a4a;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+}
+
+.form-group i {
+  position: absolute;
+  left: 10px;
+  color: #888;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px 10px 10px 35px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #5a67d8;
+  box-shadow: 0 0 5px rgba(90, 103, 216, 0.5);
+}
+
+.forgot-password {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot-password a {
+  color: #5a67d8;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.forgot-password a:hover {
+  color: #434190;
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 48%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-signup {
+  background-color: black;
+  color: #fff;
+}
+
+.btn-signin {
+  background-color: black;
+  color: #fff;
+}
+
+.btn-signup:hover, .btn-signin:hover {
+  transform: scale(1.05);
+}
+
+.form-actions {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(133, 33, 226); /* Use the same color as the Sign Up button */
+  transition: all 0.3s ease;
+  margin-bottom: 10px; /* Spacing between submit button and the other buttons */
+}
+
+.btn-submit:hover {
+  transform: scale(1.05);
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
 }
